@@ -1,17 +1,17 @@
 const resolvers = {
   Query: {
-    joke: async (_source, { id }, { dataSource }) =>
-      dataSource.jokesAPI.getJoke(id),
-    jokes: async (_source, { id }, { dataSource }) =>
-      dataSource.jokesAPI.getJokes(id),
-    rating: async (_source, { id }, { dataSource }) =>
-      dataSource.ratingsAPI.getRating(id),
-    ratings: async (_source, { id }, { dataSource }) =>
-      dataSource.ratingsAPI.getRating(),
+    joke: async (_source, { id }, { dataSources }) =>
+      dataSources.jokesAPI.getJoke(id),
+    jokes: async (_source, { id }, { dataSources }) =>
+      dataSources.jokesAPI.getJokes(),
+    rating: async (_source, { id }, { dataSources }) =>
+      dataSources.ratingsAPI.getRating(id),
+    ratings: async (_source, { id }, { dataSources }) =>
+      dataSources.ratingsAPI.getRatings(),
   },
   Mutation: {
-    rating: async (_source, { jokeId, score }, { dataSource }) => {
-      const rating = await dataSource.ratingsAPI.postRating({ jokeId, score });
+    rating: async (_source, { jokeId, score }, { dataSources }) => {
+      const rating = await dataSources.ratingsAPI.postRating({ jokeId, score });
       return rating;
     },
   },
