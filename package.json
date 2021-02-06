@@ -1,0 +1,33 @@
+{
+  "name": "jokes-api-frontend",
+  "version": "1.0.0",
+  "description": "This is the frontend of the jokes-apis.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/apollo-server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HarshitChhipa/jokes-api-frontend.git"
+  },
+  "keywords": [
+    "jokes-api",
+    "jokes-api-by-harshit",
+    "nodeJs",
+    "Frontend"
+  ],
+  "author": "HarshitChhipa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HarshitChhipa/jokes-api-frontend/issues"
+  },
+  "homepage": "https://github.com/HarshitChhipa/jokes-api-frontend#readme",
+  "devDependencies": {
+    "prettier": "2.2.1"
+  },
+  "dependencies": {
+    "apollo-datasource-rest": "^0.9.7",
+    "apollo-server-express": "^2.19.2"
+  }
+}
