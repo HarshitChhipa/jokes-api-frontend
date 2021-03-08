@@ -8,9 +8,9 @@ html {
 
 body {
   font-size: 100%;
-  font-family: Helvetica, Arial, sans-serif;
-  padding: 2rem;
+  font-family: cursive;
   text-align: center;
+  overflow-x: hidden;
 }
 
 .jokeContent {
