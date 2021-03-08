@@ -72,6 +72,7 @@ body {
 .center-text {
   text-align: center;
 }
+
 @keyframes animatedCard {
   from {
     width: 0px;
